@@ -1,0 +1,284 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+$neat-grid: (
+        columns: 12,
+        gutter: 30px,
+        media: 1366px,
+)
+;
+
+.post-card {
+  @include grid-column(6);
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.post-card .post-meta {
+  background-color: $text-color;
+  color:$lightest;
+  position: absolute;
+  top:0;
+  left:0;
+  padding:1em;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.post-link  {
+  color:black;
+  text-transform: lowercase;
+  font-size: .9em;
+  font-weight: 300;
+  margin-top: -6px;
+}
+
+.post-card h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: -6px;
+
+
+}
+
+.logo {
+  width:200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: left;
+  font-size: 3em;
+  color:black;
+  letter-spacing: 1px;
+}
+
+#logo {
+  @include grid-column(12);
+  height:50px;
+
+}
+
+
+
+#logotext {
+  @include grid-column(2);
+  border-left:1px solid black;
+  color:black;
+  height:80px;
+  padding-left: 1em;
+  padding-top:1.5em;
+
+}
+
+
+
+#header {
+  margin-top: 2em;
+  @include grid-column(12);
+  text-align: 0;
+}
+
+#intro {
+  @include grid-column(12);
+  display:inline-block;
+  clear: right;
+  margin-bottom: 2em;
+}
+
+.introtext {
+  @include grid-column(12);
+  text-align: center;
+  margin: 0 auto;
+  color:gray;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+
+.post-card img:hover {
+  filter:invert(100%);
+}
+
+.home ul {
+  list-style: none;
+}
+
+.post-category {
+  color:black;
+  padding-top: 1em;
+}
+
+#wordsinsky {
+  z-index: 99;
+  position: fixed;
+  font-size:.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight:600;
+  position: fixed;
+  color:black;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+
+
+}
+
+.text1 {
+  top:3em;
+  left:4em;
+  position: relative;
+}
+
+.text2 {
+  left:90em;
+  top:30em;
+  position: relative;
+}
+
+.text3 {
+  left:-10em;
+  top:40em;
+  position: relative;
+}
+
+.text4 {
+  left:15em;
+  top:50em;
+  position: relative;
+}
+
+.text5 {
+  left:70em;
+  top:40em;
+  position: relative;
+}
+
+.text6 {
+  left:70em;
+  top:10em;
+  position: relative;
+}
+
+
+footer {
+  background-color: red;
+  color:$lightest;
+  padding:2em;
+}
+
+footer ul {
+  margin: auto 0;
+  list-style: none;
+  text-align: center;
+}
+
+footer a, footer a:visited {
+  color:$lightest;
+}
+
+
+
+
+
+footer h3 {
+  color:$lightest;
+  text-align: center;
+}
+
+footer a {
+  color:$lightest;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+  color: $lightest;
+  background: $brand-color;
+}
+
+::selection {
+  color: $lightest;
+  background: $brand-color;
+}
+
+
+#about1 {
+  background-color: #FF00C0;
+  top:0px;
+  left:0px;
+  @include grid-column(12);
+  padding: 2em;
+  margin: 0px;
+}
+
+#about2 {
+  background-color: #1b34ff;
+  top:0px;
+  left:0px;
+  @include grid-column(12);
+  padding: 2em;
+  margin: 0px;
+}
+#about3 {
+  background-color: #fbffdb;
+  top:0px;
+  left:0px;
+  @include grid-column(12);
+  padding: 2em;
+  margin: 0px;
+}
+
+
+.abouttext {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff7fc;
+  font-weight: 600;
+}
+
+.left {
+  @include grid-column(6);
+
+}
+
+.right {
+  @include grid-column(6);
+
+}
+
+nav {
+  color:black;
+  text-align: right;
+  @include grid-column(8);
+
+}
+
+nav ul {
+  margin:0;
+
+
+}
+
+nav ul li {
+  list-style-type: none;
+  display:inline;
+  margin: 0;
+  margin-right: 1em;
+}
+
+nav ul li:nth-last-child(1) {
+  margin-right: 0em;
+
+}
+

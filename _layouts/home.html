@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div id="wordsinsky">
+    <span class="text1">observe</span>
+    <span class="text2">do</span>
+    <span class="text3">seek</span>
+    <span class="text4">ask</span>
+    <span class="text5">practice</span>
+    <span class="text6">create</span>
+  </div>
+
+<div id="intro">
+  <h1 class="introtext">
+    a design practice based out of Chicago.  Faculty champions the ability and power of creation. Through a variety of creative mediums we aim to shed light on our passions, ideas, and thoughts.
+  </h1>
+</div>
+
+
+
+  {{ content }}
+
+
+  </li>
+
+
+  <ul>
+    {% for post in site.posts %}
+    <a class="post-link" href="{{ post.url | relative_url }}">
+      <li class="post-card">
+        <span class="date"> {% assign date_format = site.minima.date_format | default: "%F" %}</span>
+
+        <img class=postimage" src="{{ '/' | relative_url }}{{ post.image }}"/>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-category">{{post.categories}}</span>
+
+        <h2>
+          {{ post.title | escape }}
+        </h2>
+      </li>
+    </a>
+    {% endfor %}
+  </ul>
+
+
+<!--
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  -->
+
+</div>
