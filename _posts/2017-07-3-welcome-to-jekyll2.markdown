@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Another DAMN design studio."
-date:   2017-06-02 22:29:53 -0500
-categories: work
-image: "images/ky.jpg"
+title:  "Graphic Design Can Be Dangerous"
+date:   2017-06-10 22:29:53 -0500
+categories: profile
+image: "images/faculty-image.jpg"
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
