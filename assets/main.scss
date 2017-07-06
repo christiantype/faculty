@@ -261,31 +261,42 @@ footer a {
   background: $brand-color;
 }
 
-#about1, #about2, #about3, #about4, #about5 {
+.about-wide {
+  vertical-align: top;
   display: inline-block;
   width:100%;
-  padding: 2em;
-  margin: 0px;
-  @include grid-container();
-
+  padding:2em;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:0 auto;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 
 
 }
 
-#about1 {
-  background-color: #FF00C0;
+.accent-1 {
+  background-color: $accent-1;
 
 }
 
-#about2 {
-  background-color: #1b34ff;
+.accent-2 {
+  background-color: $accent-2;
+  color:$lightest-color;
 }
-#about3 {
-  background-color: #fbffdb;
+.accent-3 {
+  background-color: $accent-3;
 
 }
 
-#about4 {
+
+.accent-4 {
+  background-color: $accent-2;
+}
+
+.accent-img {
   height:400px;
   background-color: #fbffdb;
   background-image: url("../images/faculty_one-1.png");
@@ -296,9 +307,6 @@ footer a {
 }
 
 
-#about5 {
-  background-color: #ff9f35;
-}
 
 .abouttext {
   text-align: center;
