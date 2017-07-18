@@ -3,42 +3,100 @@
 ---
 
 @import "faculty";
+@import "modularscale";
 @import "normalize.css";
 
-.container {
-  @include grid-container;
-}
+$max-width: 1366px;
+
+//Typography
 
 a {
   text-decoration: none;
 }
 
+p {
+  font-family: $base-sans-font-family;
+  font-weight: 400;
+  font-size:ms(1);
+  line-height: ms(2);
+  @include grid-media($mobile-grid) {
+    font-size: ms(0);
+  }
+
+}
+
+.quote {
+  border-top:1px solid $brand-color;
+  padding-top: .75em;
+  font-weight: 600;
+  font-size:ms(2);
+  line-height: ms(1);
+  margin-left: 3em;
+  display:inline-block;
+  hanging-punctuation: first;
+  @include grid-media($mobile-grid) {
+    @include grid-column(12);
+    margin-bottom: .5em;
+    padding-top: .75em;
+    margin-left: 0em;
+    margin-top: 0em;
+  }
+}
+
+
+
+.quote::before {
+  content: "“";
+  color:$brand-color;
+}
+
+.quote::after {
+  content: "”";
+  color:$accent-2;
+}
+
+
+
 body {
   font-family:$base-font-family;
   position: relative;
   width: 100%;
-
+  font-size:ms(0);
+  margin:0 auto;
+  max-width:$max-width;
 }
 
 .black-rule {
   margin-top: -10px;
-  color:black;
+  color:$darkest-color;
   width:50px;
   height:5px;
-  background-color: black;
+  background-color: $darkest-color;
   margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom:10px;
-
 }
 
+.accent-rule {
+  color:$accent-3;
+  width:50px;
+  height:5px;
+  background-color:$accent-3;
+  margin-top: 2em;
+  margin-bottom:-10px;
+}
 
-$neat-grid: (
-        columns: 12,
-        gutter: 30px,
-)
-;
+.post-date, .post-category {
+  display:inline-block;
+  font-weight: 600;
+  margin-top: 2em;
+  font-size:ms(0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 3px;
+  color:$mid-color;
+}
 
 
 
@@ -51,10 +109,17 @@ $neat-grid: (
 
 .post-card {
   @include grid-column(6);
+  margin-bottom: 3em;
   position: relative;
   list-style: none;
-
+  @include grid-media($mobile-grid) {
+    @include grid-column(12);
+  }
 }
+
+
+
+
 .post-card img {
   width:100%;
 }
@@ -68,9 +133,10 @@ $neat-grid: (
   top:0;
   left:0;
   padding:1em;
-  font-size: 1em;
+  font-size: ms(0);
   letter-spacing: 2px;
   text-align: center;
+  margin:0;
 }
 
 .post-link  {
@@ -82,63 +148,171 @@ $neat-grid: (
 }
 
 .post-card h2 {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: ms(2);
+  font-weight: 400;
   margin-top: -6px;
 
 
 }
 
-#logo {
-  @include grid-container;
-  width:200px;
-  margin: 0 auto !important;
-  height:50px;
 
-}
 
 h1 {
   text-align: left;
-  font-size: 3em;
+  font-size: ms(5);
   color:black;
-  letter-spacing: 1px;
-}
+  letter-spacing: -2.5px;
+  margin:0em;
+  @include grid-media($mobile-grid) {
+    @include grid-column(12);
+    font-size: ms(3);
+    letter-spacing: -1.0px;
 
-
-
-
-#logotext {
-  @include grid-container;
-  border-left:1px solid black;
-  color: #fd829b;
-  height:80px;
-  padding-left: 1em;
-  padding-top:1.5em;
+  }
 
 }
 
 
+
+
+
+//HEADER
 
 #header {
-  @include grid-container;
+  @include grid-column(12);
+  position: relative;
   margin-top: 2em;
-  text-align: center;
-  width:100%;
-  margin-left:0;
+  margin-bottom: 1em;
+  height:100px;
 }
+
+#header-left {
+  margin-left: 0px !important;
+  @include grid-column(6);
+  display: inline-block;
+
+
+}
+
+.logo {
+  margin: 0px;
+  width:300px;
+}
+
+#header-right {
+  @include grid-container;
+  @include grid-column(12);
+  @include grid-collapse;
+  text-align: center;
+  margin: 0 auto;
+  float:right;
+}
+
+.menu  {
+  top:-30px;
+  margin: 0 !important;
+  display: inline-block;
+  width:100vw;
+  height:100vh;
+  @include grid-collapse;
+  z-index:1000000;
+  font-weight:bold;
+  background: rgba($accent-3, 0.9);
+  position:absolute;
+  text-align:left;
+  font-size:ms(3);
+}
+.menu ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  display: block;
+}
+
+
+.menu ul li a {
+  text-decoration:none;
+  color:$lightest-color;
+}
+.menu ul li a:hover {
+  color: $lightest-color;
+  text-decoration:none;
+}
+.menu a{
+  text-decoration:none;
+  color:$lightest-color;
+}
+.menu a:hover{
+  text-decoration:none;
+  color:$lightest-color;
+}
+
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:ms(7);
+  padding:15px 15px 0px 15px;
+  color:$darkest-color;
+  border:0;
+  font-size:ms(2);
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: ms(4);
+  padding: 15px 15px 0px 15px;
+  color: $darkest-color;
+  border: 0;
+  font-size: ms(6);
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+
+
+
+
+
+
 
 #intro {
   display:inline-block;
   margin-bottom: 2em;
+  text-align: center;
 }
 
 .introtext {
   width:80%;
   text-align: center;
   margin: 0 auto;
-  color:black;
+  color:$darkest-color;
   font-weight: 400;
   line-height: 1.25em;
+  @include grid-media($mobile-grid) {
+    font-size: ms(1);
+    letter-spacing: 0;
+    line-height: ms(1);
+    margin:0 auto;
+    width:100%;
+  }
 }
 
 h3 {
@@ -149,13 +323,11 @@ h3 {
 
 .post-card img:hover {
   filter:invert(100%);
+
 }
 
 
-.post-category {
-  color:black;
-  padding-top: 1em;
-}
+
 
 #wordsinsky {
   z-index: 99;
@@ -274,9 +446,18 @@ footer a {
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 
-
 }
 
+.about-wide-img {
+  display: inline-block;
+  width:100%;
+  bottom:0;
+  padding:0px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+}
 .accent-1 {
   background-color: $accent-1;
 
@@ -315,51 +496,113 @@ footer a {
   font-weight: 600;
 }
 
-.left {
+.left, .right {
   @include grid-column(6);
+  @include grid-media($mobile-grid) {
+    @include grid-column(12);
+  }
 
 }
 
-.right {
-  @include grid-column(6);
+
+
+.leftimage {
+  float:left;
+  height:300px;
+  padding:1em 1em 1em 0em;
+}
+
+.wideimage {
+  width:100%;
 
 }
 
-nav {
-  color:black;
-  text-align: right;
-  @include grid-container;
-  text-align: center;
-  margin-bottom: 2em;
+
+
+
+
+
+
+.post {
+  @include grid-column(12);
+}
+
+.post-header {
+  @include grid-column(12);
+  display:inline-block;
+  @include grid-media($mobile-grid) {
+    @include grid-column(12);
+  }
 
 }
 
-nav ul {
-  margin:0;
-  padding: 0 0 0 0;
-
+.post-content {
+  margin-top: 1em;
+  @include grid-column(9);
+  margin-bottom: 3em;
+  @include grid-media($mobile-grid) {
+    @include grid-column(12);
+    font-size: ms(-1);
+  }
 
 }
 
-nav ul li, nav ul li a  {
-  list-style-type: none;
-  display:inline;
-  margin: 0;
-  margin-right: 1em;
+.author {
+  font-size:ms(-1);
   text-transform: uppercase;
-  text-decoration: none;
-  font-size:1em;
   font-weight: 600;
+  margin: 1em 0em;
+  letter-spacing: 2px;
+
+}
+
+figcaption {
+  font-size:ms(1);
+  color:$mid-color;
+  font-style: italic;
+  line-height: ms(1);
+}
+
+
+
+
+
+
+// Topics
+
+.topics {
+  display:none;
+}
+
+.topic-list {
+  list-style: none;
+}
+
+.topic-list a {
+  font-size:ms(2);
   color:$darkest-color;
 }
 
-nav ul li a:hover {
-  color:$brand-color;
+.entry-date {
+  color:$grey-color;
 }
 
+// Border
 
-nav ul li:nth-last-child(1) {
-  margin-right: 0em;
-
+#top, #bottom, #left, #right {
+  background: $accent-2;
+  position: fixed;
 }
+#left, #right {
+  top: 0; bottom: 0;
+  width: 5px;
+}
+#left { left: 0; }
+#right { right: 0; }
 
+#top, #bottom {
+  left: 0; right: 0;
+  height: 5px;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
