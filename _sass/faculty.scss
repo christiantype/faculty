@@ -15,6 +15,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 
 $base-font-family:  "minerva-modern",sans-serif !default;
+$base-sans-font-family: "ff-basic-gothic-web-pro", sans-serif;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -25,3 +26,25 @@ $base-line-height: 1.5 !default;
 // Import partials.
 @import "neat/neat";
 
+// Grids.
+
+$desktop-grid: (
+        columns: 12,
+        gutter: 50px,
+        media: 1366px,
+);
+
+
+
+$mobile-grid: (
+        columns: 12,
+        gutter: 10px,
+        media: 'only screen and (max-width: 499px)',
+);
+
+
+$neat-grid: (
+        columns: 12,
+        gutter:20px,
+
+);
