@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Goodbye, Leonard Cohen"
+date:   2016-11-11 22:29:53 -0500
+categories: tribute
+image: "images/post-good-bye-leonard-cohen.jpg"
+---
+
+<span class="quote">Singer-Songwriter Leonard Cohen passed away on November 10th, 2016, at the age of 82.</span>
+
+Cohen was born in Canada in 1934 and is known for his emotional and honest writing and songs that explored and exposed the human experience. Through his music that spanned numerous decades, Cohen brilliantly provided solace to his listeners. Cohen’s music pierced through the boundaries of depression, despair, love, loneliness, religion, loss, and more. Cohen’s art, life, and dedication to his craft, leaves us with a lifetime of  alleviation. We love you, Leonard Cohen.
+
+{% include youtubePlayer.html id="vbjRTN3-jCg" %}
+<figcaption>Leaving the Table from Leonard Cohen’s latest album, You Want it Darker (2016).</figcaption>
