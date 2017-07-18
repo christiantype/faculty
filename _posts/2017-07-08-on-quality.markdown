@@ -1,17 +1,24 @@
 ---
 layout: post
 title:  "On Quality"
-date:   2017-06-10 22:29:53 -0500
-categories: profile
-image: "images/faculty-image.jpg"
-author:
+date:   2016-07-04 07:29:53 -0500
+categories: writing
+image: "images/post-on-quality-cover.jpg"
+author: "Christian Solorzano"
 ---
 
 Quality is often a personal definition that depends on the observer, creator, consumer, producer—the list goes on. As we evolve and develop, our views on quality shift due to our continued existence. Quality can be described as a collection of influences and experiences that determine what is held responsible for the differentiation between good and bad. The passing of time allows an accumulation of influences to combine and select individual qualities to gravitate toward. Interactions with products, services, and experiences provide an opportunity for our subconscious criteria to come forth.
 
-As creators and producers of public work, there’s an amount of vulnerability that is placed upon work that exits the workplace and enters the arena of public consumption. The quality which is placed upon a particular artifact derives from its process, aesthetic, voice, rhetoric, space, and intention. The responsibility is immense and shouldn’t be one to take lightly—our choices and decisions can destroy or inspire. By designing for temporal desires, value is minimized and thus contributing to a downward spiral of illusions, tricks, and forgery. This forgery has the potential to provide comfort under certain conditions that can be destructive or serve as a short-term relief or distraction. Quality is able to acquire invisibility when it coexists with the everyday and acts under the radar. Bad quality is more often criticized and noticed because it stunts our senses into coming to realization that something is wrong—like an infection, our body rejects any foreign confrontation that contradicts our stance. However, bad quality also possesses the ability to numb our senses into accepting that which fails to inspire. Overtime, this bad quality can go undetected and eventually become socially accepted. Quality should extend the senses and provide alternative methods that amplify our existence.
+<span class="quote">Quality should extend the senses and provide alternative methods that amplify our existence.</span>
+
+As creators and producers of public work, there’s an amount of vulnerability that is placed upon work that exits the workplace and enters the arena of public consumption. The quality which is placed upon a particular artifact derives from its process, aesthetic, voice, rhetoric, space, and intention. The responsibility is immense and shouldn’t be one to take lightly—our choices and decisions can destroy or inspire. By designing for temporal desires, value is minimized and thus contributing to a downward spiral of illusions, tricks, and forgery. This forgery has the potential to provide comfort under certain conditions that can be destructive or serve as a short-term relief or distraction.
+<img class="leftimage" src="/../images/post-on-quality-this-or-that.jpg">
+Quality is able to acquire invisibility when it coexists with the everyday and acts under the radar. Bad quality is more often criticized and noticed because it stunts our senses into coming to realization that something is wrong—like an infection, our body rejects any foreign confrontation that contradicts our stance. However, bad quality also possesses the ability to numb our senses into accepting that which fails to inspire. Overtime, this bad quality can go undetected and eventually become socially accepted. Quality should extend the senses and provide alternative methods that amplify our existence.
+
 
 Living in a digital space where endless amounts of content is shared throughout various social networks and mobile applications, the definition of quality is defined by others and is dependent on popularity rather than value. A plethora of posts beg for our approval and social media networks claim to know our needs. Only when we turn to these sources for alleviation and comfort, do we provide a stamp of approval upon their so called caring and personal content that cares so much about our well-being. Rather than nourishing, they feed our cravings that only provide a lack of sustainability. There are countless avenues of communication which are used by millions of people worldwide, such as Facebook, Snapchat, Instagram, and Twitter—yet they present only self-interest in gaining power.
+
+
 
 Quality is able to be approached and judged from a political perspective as well as a creative one. The political perspective is focused on private matters excluded from the public. Factors weigh in that create smoky mirrors with false personas. Our rejection is the only way to combat toxic forces that aim to define and devaluate human values. The creative perspective inhibits a human approach. Quality exists beyond form and should only ever tell the truth. Without the truth, quality can’t exist.
 
