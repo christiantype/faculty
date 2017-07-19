@@ -1,19 +1,21 @@
 
-<div id="header">
-
-    <div id="header-left">
-            <a href="{{ '/' | relative_url }}"  title="{{ site.name }}">{{ site.name }}
-                <svg class="logo">
-             {% include faculty-logo-black.svg %}
-         </svg>
-
-            </a>
-    </div>
-    <nav id="header-right">
+<nav role="navigation" class="site-nav">
 
 
-        <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button>
+
+
+
+
+
+
+
+        <a href="{{ '/' | relative_url }}"  title="{{ site.name }}">{{ site.name }}
+            <svg class="logo">
+                {% include faculty-logo-black.svg %}
+            </svg>
+        </a>
+        <button class="hamburger">MENU</button>
+        <button class="cross">CLOSE</button>
         <ul class="menu">
             <li>
                 <a href="{{ '/about' | relative_url }}">about</a>
@@ -22,15 +24,15 @@
                 <a href="{{ '/archive' | relative_url }}">archive</a>
             </li>
             <li>
-               <em><a>shop [in 2018]</a></em>
+                <em><a>shop [coming in 2018]</a></em>
             </li>
             <li>
                 <a href="{{ '/about' | relative_url }}">contact</a>
             </li>
         </ul>
-    </nav>
 
-</div>
+
+</nav>
 
 <div id="left"></div>
 <div id="right"></div>

@@ -64,6 +64,9 @@ body {
   font-size:ms(0);
   margin:0 auto;
   max-width:$max-width;
+  @include grid-media($mobile-grid) {
+    max-width: 600px;
+  }
 }
 
 .black-rule {
@@ -178,67 +181,70 @@ h1 {
 
 //HEADER
 
-#header {
-  @include grid-column(12);
-  position: relative;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  height:100px;
+.site-nav {
+  position:relative;
+  @include grid-container;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  @include grid-media($mobile-grid) {
+    @include grid-column(12);
+
+
+  }
+
+
+
 }
 
-#header-left {
-  margin-left: 0px !important;
-  @include grid-column(6);
-  display: inline-block;
 
 
-}
+
+
 
 .logo {
-  margin: 0px;
-  width:300px;
+  width:150px;
+  height:30px;
+  float:left;
 }
 
-#header-right {
-  @include grid-container;
-  @include grid-column(12);
-  @include grid-collapse;
-  text-align: center;
-  margin: 0 auto;
-  float:right;
-}
+
 
 .menu  {
   top:-30px;
-  margin: 0 !important;
+  width:100%;
+  position: absolute;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
   display: inline-block;
-  width:100vw;
-  height:100vh;
-  @include grid-collapse;
   z-index:1000000;
   font-weight:bold;
   background: rgba($accent-3, 0.9);
-  position:absolute;
-  text-align:left;
-  font-size:ms(3);
+  text-align:center;
+  font-size:ms(1);
+  padding: 0 !important;
 }
 .menu ul {
-  margin: 0 !important;
-  padding: 0 !important;
-  list-style-type: none;
-  list-style-image: none;
+  position: relative;
+  left: 0;
+
 }
 .menu li {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 3em;
   text-align: center;
   display: block;
+  padding: 0 !important;
+
 }
 
 
 .menu ul li a {
   text-decoration:none;
   color:$lightest-color;
+  padding: 0 !important;
+
 }
 .menu ul li a:hover {
   color: $lightest-color;
@@ -254,36 +260,22 @@ h1 {
 }
 
 
-.hamburger{
+.hamburger, .cross {
+  margin-right: 30px;
+  font-family: $base-font-family;
   background:none;
   position:absolute;
   top:0;
   right:0;
-  line-height:ms(7);
-  padding:15px 15px 0px 15px;
+  padding:30px 0px 0px 0px;
   color:$darkest-color;
   border:0;
-  font-size:ms(2);
+  font-size:ms(1);
   font-weight:bold;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-}
 
-.cross {
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: ms(4);
-  padding: 15px 15px 0px 15px;
-  color: $darkest-color;
-  border: 0;
-  font-size: ms(6);
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
 }
 
 
@@ -294,9 +286,11 @@ h1 {
 
 
 #intro {
+  @include grid-column(12);
   display:inline-block;
   margin-bottom: 2em;
   text-align: center;
+
 }
 
 .introtext {
@@ -332,7 +326,7 @@ h3 {
 #wordsinsky {
   z-index: 99;
   position: fixed;
-  font-size:.8em;
+  font-size:ms(-1);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight:600;
@@ -391,7 +385,6 @@ footer {
   background-color: $brand-color;
   color:$lightest-color;
   padding:2em 0;
-  height:120px;
   bottom:0;
   left:0;
   right:0;
@@ -524,7 +517,7 @@ footer a {
 
 
 .post {
-  @include grid-column(12);
+  @include grid-container;
 }
 
 .post-header {
