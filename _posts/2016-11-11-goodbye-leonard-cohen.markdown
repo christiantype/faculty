@@ -4,6 +4,7 @@ title:  "Goodbye, Leonard Cohen"
 date:   2016-11-11 22:29:53 -0500
 categories: tribute
 image: "images/post-good-bye-leonard-cohen.jpg"
+published: false
 ---
 
 <span class="quote">Singer-Songwriter Leonard Cohen passed away on November 10th, 2016, at the age of 82.</span>
