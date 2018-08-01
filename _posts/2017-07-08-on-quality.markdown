@@ -5,7 +5,6 @@ date:   2016-07-04 07:29:53 -0500
 categories: writing
 image: "images/post-on-quality-cover.jpg"
 author: "Christian Solorzano"
-published: false
 ---
 
 Quality is often a personal definition that depends on the observer, creator, consumer, producer—the list goes on. As we evolve and develop, our views on quality shift due to our continued existence. Quality can be described as a collection of influences and experiences that determine what is held responsible for the differentiation between good and bad. The passing of time allows an accumulation of influences to combine and select individual qualities to gravitate toward. Interactions with products, services, and experiences provide an opportunity for our subconscious criteria to come forth.

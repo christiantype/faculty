@@ -59,7 +59,6 @@ p {
 
 body {
   font-family:$base-font-family;
-  position: relative;
   width: 100%;
   font-size:ms(0);
   margin:0 auto;
@@ -181,23 +180,41 @@ h1 {
 
 //HEADER
 
-.site-nav {
-  position:relative;
+
+header {
+  text-align: right;
   @include grid-container;
   padding-top: 2em;
   padding-bottom: 1em;
   @include grid-media($mobile-grid) {
     @include grid-column(12);
-
-
   }
+}
 
+#logo {
+  @include grid-column(6);
+}
 
-
+nav {
+  text-align: right;
+  @include grid-column(6);
 }
 
 
+nav ul {
+  right:0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+nav ul li {
+  font-size:ms(1);
+  padding: .5em;
+  display: inline;
+  text-align: right;
+  text-decoration: none;
+}
 
 
 
@@ -209,90 +226,13 @@ h1 {
 
 
 
-.menu  {
-  top:-30px;
-  width:100%;
-  position: absolute;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  display: inline-block;
-  z-index:1000000;
-  font-weight:bold;
-  background: rgba($accent-3, 0.9);
-  text-align:center;
-  font-size:ms(1);
-  padding: 0 !important;
+
+
+
+
+.container {
+  overflow:hidden;
 }
-.menu ul {
-  position: relative;
-  left: 0;
-
-}
-.menu li {
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  text-align: center;
-  display: block;
-  padding: 0 !important;
-
-}
-
-
-.menu ul li a {
-  text-decoration:none;
-  color:$lightest-color;
-  padding: 0 !important;
-
-}
-.menu ul li a:hover {
-  color: $lightest-color;
-  text-decoration:none;
-}
-.menu a{
-  text-decoration:none;
-  color:$lightest-color;
-}
-.menu a:hover{
-  text-decoration:none;
-  color:$lightest-color;
-}
-
-
-.hamburger, .cross {
-  margin-right: 30px;
-  font-family: $base-font-family;
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  padding:30px 0px 0px 0px;
-  color:$darkest-color;
-  border:0;
-  font-size:ms(1);
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-  @include grid-media($mobile-grid) {
-    @include grid-media($mobile-grid) {
-      margin-top: .5em;
-      font-size: ms(0);
-      letter-spacing: 0;
-      line-height: ms(1);
-      text-align: right;
-
-    }
-  }
-}
-
-
-
-
-
-
-
 
 
 
@@ -306,7 +246,6 @@ h1 {
 
 .introtext {
   margin: 3em auto;
-  width:80%;
   text-align: center;
  // margin: 0 auto; deactivated for temp site
   color:$darkest-color;
@@ -322,6 +261,8 @@ h1 {
 }
 
 h3 {
+  font-size:ms(0);
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 600;
 
@@ -342,7 +283,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight:600;
-  color:black;
+  color:$mid-color;
   -webkit-user-select: none; /* Chrome/Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+ */
@@ -392,39 +333,31 @@ h3 {
 
 
 footer {
+  bottom: 1em;
+  text-align: center;
   display: inline-block;
   width:100%;
-  background-color: $brand-color;
-  color:$lightest-color;
+  color:$darkest-color;
   padding:2em 0;
-  bottom:0;
   left:0;
   right:0;
   margin:0 auto;
+  font-size:ms(1);
 
 }
 
-footer li {
-  margin: auto 0;
-  list-style: none;
-  text-align: center;
-}
-
-footer a, footer a:visited {
-  color:$lightest-color;
-}
 
 
 
 
 
 footer h3 {
-  color:$lightest-color;
+  color:$darkest-color;
   text-align: center;
 }
 
 footer a {
-  color:$lightest-color;
+  color:$darkest-color;
 }
 
 

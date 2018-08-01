@@ -4,7 +4,6 @@ title:  "Traceability Matters"
 date:   2017-07-4 22:29:53 -0500
 categories: Profile
 image: "images/post-traceability.jpg"
-published: false
 
 ---
 <span class="quote">Traceability attempts to track small bits of the commercial food industry and demonstrate how challenging it is to be informed.</span>
