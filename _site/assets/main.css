@@ -543,7 +543,9 @@ header {
 #logo {
   width: calc(100% - 80px);
   float: left;
-  margin-left: 40px; }
+  margin-left: 40px;
+  float: none;
+  margin: 0 auto; }
 
 nav {
   width: calc(100% - 80px);
@@ -561,12 +563,6 @@ nav ul li {
   display: inline;
   text-align: right;
   text-decoration: none; }
-
-.logo {
-  margin: 0 auto;
-  width: 250px;
-  height: 130px;
-  text-align: center; }
 
 .container {
   overflow: hidden; }

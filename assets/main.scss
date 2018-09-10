@@ -194,6 +194,8 @@ header {
 
 #logo {
   @include grid-column(12);
+  float: none;
+  margin: 0 auto;
 }
 
 nav {
@@ -218,10 +220,10 @@ nav ul li {
 
 
 .logo {
-  margin:0 auto;
-  width:250px;
-  height:130px;
-  text-align: center;
+ //  margin:0 auto;
+ // width:200px;
+  //height:130px;
+  // text-align: center;
 }
 
 
